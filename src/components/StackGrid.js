@@ -228,6 +228,7 @@ export class GridInline extends Component {
       gutterHeight,
       horizontal,
     } = props;
+    if (containerWidth === 0) return;
 
     const childArray = React.Children.toArray(props.children);
     const [maxColumn, columnWidth] = getColumnLengthAndWidth(
